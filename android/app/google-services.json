@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "40282239780",
+    "project_id": "flyday-broker",
+    "storage_bucket": "flyday-broker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40282239780:android:9889d4ff52d556582b39b1",
+        "android_client_info": {
+          "package_name": "io.flyday.broker.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40282239780-kn73m2t5m97kibqu21piskg4dn42atfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYgd93i8KUeLuNCAj3rwpbLUocC2qTzZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40282239780-kn73m2t5m97kibqu21piskg4dn42atfk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "40282239780-3vvh6k0e942urln5kpu3gihcnll7g96c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flydayBrocker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

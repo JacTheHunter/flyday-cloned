@@ -1,0 +1,25 @@
+require 'dotenv'
+Dotenv.load('../../.keys/.env')
+
+default_platform(:android)
+
+platform :android do
+  desc "Submit a new Beta Build to Firebase App Distribution"
+  lane :beta do
+    gradle(
+    task: 'assemble',
+    build_type: 'Release',
+    properties: {
+      "android.injected.version.code" => flutter_version()["version_code"],
+      "android.injected.version.name" => flutter_version()["version_name"],
+      }
+    )
+
+    firebase_app_distribution(
+    app: ENV['FIREBASE_APP_DISTRIBUTION_APP_ID'],
+    groups: "flyday-broker-internal-testers",
+    apk_path: "../build/app/outputs/flutter-apk/app-release.apk",
+    firebase_cli_token: ENV['FIREBASE_CLI_TOKEN']
+  )
+  end
+end

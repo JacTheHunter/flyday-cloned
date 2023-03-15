@@ -1,0 +1,16 @@
+dev_dependencies:
+  flutter_launcher_icons: "^0.10.0"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/raster/launcher_icon.jpg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/raster/launcher_icon.jpg"
+    background_color: "#000211"
+    theme_color: "#000211"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#000211"
+  adaptive_icon_foreground: "assets/images/raster/launcher_foreground_icon.jpg"

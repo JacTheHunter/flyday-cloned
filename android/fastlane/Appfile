@@ -1,0 +1,2 @@
+json_key_file(ENV['PLAY_CONSOLE_API_SECRET_JSON_FILE_PATH'])
+package_name("io.flyday.broker.android")
